@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    height: 100vh;
+    font-size: 1.7rem;
+    background-image: conic-gradient(rgb(241, 76, 76), rgb(242, 242, 131), rgb(239, 192, 103), rgb(102, 240, 102),lightblue, rgb(96, 96, 248), rgb(250, 117, 250));
+}
+
+#container{
+    width: 70%;
+    margin: auto ;
+    background-image: linear-gradient(to bottom right, rgb(255, 199, 199),  aliceblue, bisque, rgb(219, 249, 249), rgb(209, 243, 209), rgb(240, 240, 183), rgb(249, 223, 174), rgb(248, 204, 248)) ;
+    border-radius: 20px;
+    box-shadow: 5px 5px 25px #00000050;
+    padding: 15px;
+}
+
+input{
+    font-size: 1.5rem;
+    padding: 7px 15px;
+    width: 30%;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: 3px 3px 5px #0003;
+}
+
+#textResult{
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+#imageResult{
+    margin: 15px;
+}
+
+button{
+    font-size: 1.4rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-image: repeating-radial-gradient(circle, rgb(245, 140, 12)14%, rgb(243, 226, 204) 25%, rgb(187, 164, 135)40%);
+    cursor: pointer;
+}
+
+button:hover {
+    background-image: repeating-radial-gradient( rgb(252, 141, 6)14%, rgb(255, 229, 196) 25%, rgb(215, 184, 146)40%);
+    opacity: 0.9;
+}
+
+button:active{
+    background-image: repeating-radial-gradient(circle, rgb(245, 140, 12)14%, rgb(243, 226, 204) 25%, rgb(187, 164, 135)40%);
+    opacity: 0.6;
+}
+
+@media screen and (max-width : 500px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+    }
+    input, button{
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+    }
+}
